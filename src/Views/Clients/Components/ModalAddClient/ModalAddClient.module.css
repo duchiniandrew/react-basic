@@ -1,0 +1,23 @@
+.inputSpace {
+    margin-bottom: 20px !important;
+}
+
+.programingLanguagesLabel {
+    width: 100%;
+}
+.actionBar {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #1E88E5;
+    padding: 10px;
+}
+.actionButtons {
+    color: white !important;
+    margin: 0 10px 0 10px !important;
+}
+.btnSave {
+    border-style: solid !important;
+    border-width: 2px !important;
+    border-color: white !important;
+    border-radius: 20px !important;
+}

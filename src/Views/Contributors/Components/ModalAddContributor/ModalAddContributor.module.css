@@ -1,0 +1,42 @@
+.inputContainer {
+    display: flex;
+    justify-content: space-between;
+}
+.inputSpace {
+    margin: 10px !important;
+}
+.fullLineInput {
+    display: flex;
+    flex: 1;
+}
+.actionBar {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #1E88E5;
+    padding: 10px;
+}
+.actionButtons {
+    color: white !important;
+    margin: 0 10px 0 10px !important;
+}
+.btnSave {
+    border-style: solid !important;
+    border-width: 2px !important;
+    border-color: white !important;
+    border-radius: 20px !important;
+}
+.dropdownContainer {
+    display: flex;
+    align-content: flex-end;
+}
+.selectInputContainer {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+.dateInput {
+    display: flex;
+    flex-grow: 1;
+}

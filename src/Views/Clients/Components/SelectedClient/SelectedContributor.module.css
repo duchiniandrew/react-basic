@@ -1,0 +1,23 @@
+.selectedContributorContainer {
+    display: flex;
+    flex-grow: 100;
+    flex-direction: column;
+    height: 100%;
+    width: 300px;
+    border-width: 2px 2px 2px 0 ;
+    border-color: rgba(0, 0, 0, 0.12);
+    border-style: solid;
+}
+.selectedContributorInfo {
+    margin: 20px;
+}
+.selectedContributorActionsContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.selectedContributorActionsBtns {
+    width: 180px;
+    font-size: 14px;
+    margin-bottom: 20px !important;
+}

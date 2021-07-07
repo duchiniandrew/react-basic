@@ -1,0 +1,17 @@
+.contributorContainer {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.addContributorBtn {
+    background: #1e88e5 !important;
+    color: white !important;
+}
+.listContainer {
+    border-width: 2px 2px 2px 0 ;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,21 @@
+.contributorTable {
+    overflow-y: auto;
+    height: 100%;
+}
+.memberPrimaryInfo {
+    font-size: 18px !important;
+}
+.memberSecondarylInfo {
+    font-size: 12px !important;
+}
+.table {
+    display: flex;
+    height: 100%;
+}
+.tableReduced {
+    max-width: 1090px !important;
+}
+.tableCollumnName {
+    color: #1E88E5;
+    font-size: 18px;
+}

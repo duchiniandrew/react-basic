@@ -1,0 +1,39 @@
+.contributorContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.filterContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    background-color: white;
+}
+.listContainer {
+    border-width: 2px 2px 2px 0 ;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+}
+.tableContainer {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.selectedContributorContainer {
+    display: flex;
+    flex-grow: 1;
+    background-color: white;
+}
+.tableRow {
+    border-left-style: solid;
+    border-left-width: 5px;
+    border-left-color: white;
+}
+.tableRow:hover {
+    border-left-style: solid;
+    border-left-width: 5px;
+    border-left-color: #62C7DA;
+}

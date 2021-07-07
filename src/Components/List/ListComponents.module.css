@@ -1,0 +1,10 @@
+.listComponents {
+    overflow-y: auto;
+    height: 100%;
+}
+.primaryInfo {
+    font-size: 18px !important;
+}
+.secondarylInfo {
+    font-size: 12px !important;
+}

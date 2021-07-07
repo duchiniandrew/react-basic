@@ -1,0 +1,14 @@
+.accountMenuHeader {
+    background-color: #776DEE;
+    color: white;
+}
+
+.accountMenuOptions {
+    display: flex;
+    align-items: center;
+    margin: 10px 10px 0 0;
+}
+
+.accountMenuOptionsIcon {
+    margin-right: 10px;
+}

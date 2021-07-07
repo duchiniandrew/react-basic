@@ -1,0 +1,21 @@
+.modalCanvas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.modalTopBar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1E88E5;
+}
+.closeIcon {
+    color: white !important;
+}
+.modalBody {
+    background-color: white;
+}
+.modalContainer {
+    width: 480px;
+}
