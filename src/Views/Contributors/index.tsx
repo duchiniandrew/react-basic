@@ -8,10 +8,11 @@ import { getAllEmployees } from "../../Apis/Employees"
 
 import { Employees } from "../../types/Employees"
 import styles from "./Contributors.module.css"
+import { mockEmployee } from "./mockedEmployees"
 
 export default function Contributors(): JSX.Element {
-    const [initialList, setInitialList] = useState<Employees[]>([])
-    const [contributorsList, setContributorsList] = useState<Employees[]>([])
+    const [initialList, setInitialList] = useState<Employees[]>(mockEmployee)
+    const [contributorsList, setContributorsList] = useState<Employees[]>(mockEmployee)
     const [selectedContributor, setSelectedContributor] = useState<Employees | undefined>()
 
     useEffect(() => {
@@ -20,8 +21,8 @@ export default function Contributors(): JSX.Element {
 
     function refreshEmployeeList() {
         getAllEmployees(["addresses", "salaries"]).then((result: Employees[]) => {
-            setInitialList(result)
-            setContributorsList(result)
+            setInitialList(mockEmployee)
+            setContributorsList(mockEmployee)
         })
     }
 

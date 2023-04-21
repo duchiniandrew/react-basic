@@ -14,4 +14,8 @@ export interface Employees {
     addresses: Address[]
     contracts: Contracts[]
     allocations?: Allocations[]
+    companyTime: string,
+    lastBonus: string
+    lastFeedback: string
+    programedVacation: string
 }

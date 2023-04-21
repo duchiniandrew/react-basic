@@ -42,10 +42,10 @@ export default function SelectedContributor({ selectedContributor, setSelectedCo
                     <Divider />
                     <div className={styles.selectedContributorInfo}>
                         <Typography><b>Salário: </b> {selectedContributor.contracts[selectedContributor.contracts.length - 1].salaries[0].value}</Typography>
-                        {/* <Typography><b>Último Bonus:</b> {selectedContributor.lastBonus}</Typography>
-                        <Typography><b>Tempo de casa:</b> {selectedContributor.enterpriseTime}</Typography>
+                        <Typography><b>Último Bonus:</b> {selectedContributor.lastBonus}</Typography>
+                        <Typography><b>Tempo de casa:</b> {selectedContributor.companyTime}</Typography>
                         <Typography><b>Último feedback:</b> {selectedContributor.lastFeedback}</Typography>
-                        <Typography><b>Férias Agendada:</b> {selectedContributor.programedVacation}</Typography> */}
+                        <Typography><b>Férias Agendada:</b> {selectedContributor.programedVacation}</Typography>
                     </div>
                     <Divider />
                     <div className={styles.selectedContributorInfo}>

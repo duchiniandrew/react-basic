@@ -43,9 +43,9 @@ export default function SelectedContributor({ selectedClient }: { selectedClient
                         )} */}
                     </div>
                     <Divider />
-                    <div className={styles.selectedContributorActionsContainer}>
+                    {/* <div className={styles.selectedContributorActionsContainer}>
                         <Button className={styles.selectedContributorActionsBtns} variant="contained">Exemplo</Button>
-                    </div>
+                    </div> */}
                 </div>
                 : ""}
         </Fragment>
