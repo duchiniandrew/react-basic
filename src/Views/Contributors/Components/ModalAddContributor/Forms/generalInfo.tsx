@@ -15,8 +15,8 @@ export default function GeneralInfo({
     setCpf,
     rg,
     setRg,
-    raroEmail,
-    setRaroEmail,
+    email,
+    setEmail,
     birthDate,
     setBirthDate,
     contributornameError,
@@ -24,7 +24,7 @@ export default function GeneralInfo({
     cellphoneError,
     cpfError,
     rgError,
-    raroEmailError,
+    emailError,
     birthDateError
 }: {
     contributorname: string,
@@ -37,8 +37,8 @@ export default function GeneralInfo({
     setCpf: Dispatch<SetStateAction<string>>,
     rg: string,
     setRg: Dispatch<SetStateAction<string>>,
-    raroEmail: string,
-    setRaroEmail: Dispatch<SetStateAction<string>>,
+    email: string,
+    setEmail: Dispatch<SetStateAction<string>>,
     birthDate: string,
     setBirthDate: Dispatch<SetStateAction<string>>,
     contributornameError: boolean,
@@ -46,7 +46,7 @@ export default function GeneralInfo({
     cellphoneError: boolean,
     cpfError: boolean,
     rgError: boolean,
-    raroEmailError: boolean,
+    emailError: boolean,
     birthDateError: boolean,
 }): JSX.Element {
     return (
@@ -100,11 +100,11 @@ export default function GeneralInfo({
             <div className={styles.inputContainer}>
                 <TextField
                     required
-                    error={raroEmailError}
-                    value={raroEmail}
-                    onChange={e => setRaroEmail(e.target.value)}
+                    error={emailError}
+                    value={email}
+                    onChange={e => setEmail(e.target.value)}
                     className={styles.inputSpace}
-                    label="Email da Raro" />
+                    label="Email" />
                 <TextField
                     required
                     error={birthDateError}

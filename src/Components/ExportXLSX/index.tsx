@@ -10,7 +10,7 @@ export default function ExportXLSX({ exportData, btnStyle }: { exportData: any[]
         const wb = { Sheets: { 'data': ws }, SheetNames: ['data'] };
         const excelBuffer = XLSX.write(wb, { bookType: "xlsx", type: "array" });
         const data = new Blob([excelBuffer], { type: fileType });
-        saveAs(data, "dados.xlsx")
+        saveAs(data, "data.xlsx")
     }
 
     return (

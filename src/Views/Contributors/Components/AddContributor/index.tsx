@@ -23,19 +23,19 @@ export default function AddContributor({ refreshEmployeeList }: { refreshEmploye
 
     return (
         <div className={styles.addContributor}>
-            <Button color="primary" onClick={() => generateModal(<ModalAddContributor refreshEmployeeList={refreshEmployeeList} setErrorOpenSnackBar={setErrorOpenSnackBar} setSuccessOpenSnackBar={setSuccessOpenSnackBar} closeFunc={setOpen} />, "Novo Colaborador")} variant="contained" className={styles.addContributorBtn}>
-                Novo Colaborador
+            <Button color="primary" onClick={() => generateModal(<ModalAddContributor refreshEmployeeList={refreshEmployeeList} setErrorOpenSnackBar={setErrorOpenSnackBar} setSuccessOpenSnackBar={setSuccessOpenSnackBar} closeFunc={setOpen} />, "New Employee")} variant="contained" className={styles.addContributorBtn}>
+                New Employee
             </Button>
             <Divider />
             <ModalComponent title={modalTitle} open={open} setOpen={setOpen} componentInModal={componentInModal} />
             <Snackbar open={openSuccessSnackBar} onClose={() => setSuccessOpenSnackBar(false)} autoHideDuration={6000}>
                 <MuiAlert onClose={() => setSuccessOpenSnackBar(false)} elevation={6} severity="success" variant="filled">
-                    Colaborador Adicionado com Sucesso!
+                    Successfully created new employee!
                 </MuiAlert>
             </Snackbar>
             <Snackbar open={openErrorSnackBar} onClose={() => setErrorOpenSnackBar(false)} autoHideDuration={6000}>
                 <MuiAlert onClose={() => setErrorOpenSnackBar(false)} elevation={6} severity="error" variant="filled">
-                    Erro ao adicionar Colaborador!
+                    Error while adding new Employee!
                 </MuiAlert>
             </Snackbar>
         </div>

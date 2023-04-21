@@ -1,6 +1,7 @@
 import React, { useState } from "react"
-import { IconButton, Menu } from "@material-ui/core"
+import { IconButton, Menu, Avatar } from "@material-ui/core"
 import { Person } from "@material-ui/icons"
+import Icon from "../../img/andrew.png"
 
 import UserMenuOptions from "../UserMenuOptions"
 
@@ -11,7 +12,8 @@ export default function UserMenu(): JSX.Element {
     return (
         <div>
             <IconButton onClick={e => setAnchor(e.currentTarget)} edge="start" color="inherit" aria-label="menu">
-                <Person style={{ fontSize: 40 }} />
+                {Icon ? <Avatar src={Icon}></Avatar> :
+                    <Person style={{ fontSize: 40 }} />}
             </IconButton>
             <Menu
                 anchorEl={anchor}

@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom"
 import { List, ListItem, ListItemText, ListItemIcon, Typography } from '@material-ui/core';
 import { Group, Work, Assignment } from '@material-ui/icons';
 
-import RaroIcon from "../../img/iconeRaro.jpeg"
+import Icon from "../../img/icone.jpg"
 import styles from "./SideNav.module.css"
 
 export default function SideNav({ fullMenu }: { fullMenu: boolean }): JSX.Element {
@@ -13,8 +13,8 @@ export default function SideNav({ fullMenu }: { fullMenu: boolean }): JSX.Elemen
     return (
         <div className={`${styles.sideNavContainer} ${fullMenu || styles.sideNavReduced}`}>
             <div className={styles.sideNavMenuHeader}>
-                <img alt="Simbolo raro" className={styles.raroIcon} src={RaroIcon} width="40" height="40" />
-                <Typography className={fullMenu ? "" : styles.sideNavHideMenusNames} variant="h6">&nbsp; &nbsp;Raro Basic</Typography>
+                <img alt="Company icon" className={styles.companyIcon} src={Icon} width="40" height="40" />
+                <Typography className={fullMenu ? "" : styles.sideNavHideMenusNames} variant="h6">&nbsp; &nbsp;React Basic</Typography>
             </div>
             <List className={styles.listContainer}>
                 <div className={styles.listOptionContainer}>
@@ -22,7 +22,7 @@ export default function SideNav({ fullMenu }: { fullMenu: boolean }): JSX.Elemen
                         <ListItem key="1" className={checkMatchRouterClass(["/main/clients"])}>
                             <ListItemIcon className={styles.sideNavMenuOptions}>
                                 <Group className={styles.sideNavMenuIcons} />
-                                <ListItemText className={fullMenu ? "" : styles.sideNavHideMenusNames} primary="Clientes" />
+                                <ListItemText className={fullMenu ? "" : styles.sideNavHideMenusNames} primary="Clients" />
                             </ListItemIcon>
                         </ListItem>
                     </Link>
@@ -32,27 +32,27 @@ export default function SideNav({ fullMenu }: { fullMenu: boolean }): JSX.Elemen
                         <ListItem key="2" className={checkMatchRouterClass(["/main/contributors"])}>
                             <ListItemIcon className={styles.sideNavMenuOptions}>
                                 <Group className={styles.sideNavMenuIcons} />
-                                <ListItemText className={fullMenu ? "" : styles.sideNavHideMenusNames} primary="Colaboradores" />
+                                <ListItemText className={fullMenu ? "" : styles.sideNavHideMenusNames} primary="Employees" />
                             </ListItemIcon>
                         </ListItem>
                     </Link>
                 </div>
-                <div className={styles.listOptionContainer}>
+                {/* <div className={styles.listOptionContainer}>
                     <Link to="/main/projects">
                         <ListItem key="3" className={checkMatchRouterClass(["/main/projects"])}>
                             <ListItemIcon className={styles.sideNavMenuOptions}>
                                 <Work className={styles.sideNavMenuIcons} />
-                                <ListItemText className={fullMenu ? "" : styles.sideNavHideMenusNames} primary="Projetos" />
+                                <ListItemText className={fullMenu ? "" : styles.sideNavHideMenusNames} primary="Projects" />
                             </ListItemIcon>
                         </ListItem>
                     </Link>
-                </div>
+                </div> */}
                 <div className={styles.listOptionContainer}>
                     <Link to="/main/reports">
                         <ListItem key="4" className={checkMatchRouterClass(["/main/reports"])}>
                             <ListItemIcon className={styles.sideNavMenuOptions}>
                                 <Assignment className={styles.sideNavMenuIcons} />
-                                <ListItemText className={fullMenu ? "" : styles.sideNavHideMenusNames} primary="Relatórios" />
+                                <ListItemText className={fullMenu ? "" : styles.sideNavHideMenusNames} primary="Reports" />
                             </ListItemIcon>
                         </ListItem>
                     </Link>

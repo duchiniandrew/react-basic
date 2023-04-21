@@ -11,16 +11,16 @@ export default function ContributorsTable({ contributorsList, selectedContributo
                 <TableHead>
                     <TableRow>
                         <TableCell align="left">
-                            <span className={styles.tableCollumnName}>Colaborador</span>
+                            <span className={styles.tableCollumnName}>Employee</span>
                         </TableCell>
                         <TableCell align="center">
                             <span className={styles.tableCollumnName}>Email</span>
                         </TableCell>
                         <TableCell align="center">
-                            <span className={styles.tableCollumnName}>Especialidade</span>
+                            <span className={styles.tableCollumnName}>Speciality</span>
                         </TableCell>
                         <TableCell align="center">
-                            <span className={styles.tableCollumnName}>Projeto Atual</span>
+                            <span className={styles.tableCollumnName}>Actual Project</span>
                         </TableCell>
                     </TableRow>
                 </TableHead>
@@ -40,7 +40,7 @@ export default function ContributorsTable({ contributorsList, selectedContributo
                                     } />
                                 </ListItem>
                             </TableCell>
-                            <TableCell align="center">{contributor.professionalEmailRaro}</TableCell>
+                            <TableCell align="center">{contributor.professionalEmail}</TableCell>
                         </TableRow>
                     ))}
                 </TableBody>

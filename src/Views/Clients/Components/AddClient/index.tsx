@@ -8,7 +8,7 @@ export default function AddClient({ generateModal, setOpen }: { generateModal: a
     return (
         <div className={styles.addContributor}>
             <Button onClick={() => generateModal(<ModalAddClient closeFunc={setOpen} />)} variant="contained" className={styles.addContributorBtn}>
-                Novo Cliente
+                New Client 
             </Button>
             <Divider />
         </div>

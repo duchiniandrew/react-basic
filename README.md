@@ -10,7 +10,7 @@ Este projeto tem como objetivo criar um sistema de RH para gerenciamento e contr
 
 * Visualizar todos os projetos que a empresa produz, juntamente com quem atua neles, para quem é este projeto e quais as tecnologias utilizadas no projeto.
 
-* Visualizar relatórios diversos que corelacionam os dados de clientes, projetos e funcionários da rarolabs. Exemplos: "Quais são os funcionários que atuam no projeto X". "Quais são todos os funcionários com férias agendadas para o ano Y". "Quais são os desenvolvedores NodeJS que atuam no projeto Z"
+* Visualizar relatórios diversos que corelacionam os dados de clientes, projetos e funcionários de uma empresa. Exemplos: "Quais são os funcionários que atuam no projeto X". "Quais são todos os funcionários com férias agendadas para o ano Y". "Quais são os desenvolvedores NodeJS que atuam no projeto Z"
 
 ## Requisitos para rodar o projeto
 

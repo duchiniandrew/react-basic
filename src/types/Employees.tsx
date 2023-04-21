@@ -9,7 +9,7 @@ export interface Employees {
     CPF: string
     RG: string
     personalEmail: string
-    professionalEmailRaro: string
+    professionalEmail: string
     cellPhone: string
     addresses: Address[]
     contracts: Contracts[]

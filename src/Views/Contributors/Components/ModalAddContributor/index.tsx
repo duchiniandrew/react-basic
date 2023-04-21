@@ -18,7 +18,7 @@ export default function ModalAddContributor({ refreshEmployeeList, closeFunc, se
     const [cellphone, setCellphone] = useState<string>("")
     const [cpf, setCpf] = useState<string>("")
     const [rg, setRg] = useState<string>("")
-    const [raroEmail, setRaroEmail] = useState<string>("")
+    const [email, setEmail] = useState<string>("")
     const [birthDate, setBirthDate] = useState<string>("")
 
     const [projectRegistrationNumber, setProjectRegistrationNumber] = useState<string>("")
@@ -45,7 +45,7 @@ export default function ModalAddContributor({ refreshEmployeeList, closeFunc, se
     const [cellphoneError, setCellphoneError] = useState<boolean>(false)
     const [cpfError, setCpfError] = useState<boolean>(false)
     const [rgError, setRgError] = useState<boolean>(false)
-    const [raroEmailError, setRaroEmailError] = useState<boolean>(false)
+    const [emailError, setEmailError] = useState<boolean>(false)
     const [birthDateError, setBirthDateError] = useState<boolean>(false)
 
     const [cepError, setCepError] = useState<boolean>(false)
@@ -74,7 +74,7 @@ export default function ModalAddContributor({ refreshEmployeeList, closeFunc, se
                 CPF: cpf.replaceAll(".", "").replace("-", ""),
                 RG: rg,
                 personalEmail: personalEmail,
-                professionalEmailRaro: raroEmail,
+                professionalEmail: email,
                 cellPhone: cellphone.replace("(", "").replace(")", "").replace(" ", "").replace("-", ""),
                 contracts: [{
                     id: 5,
@@ -138,9 +138,9 @@ export default function ModalAddContributor({ refreshEmployeeList, closeFunc, se
             isInvalid = true
             setRgError(true)
         }
-        if (raroEmail === "" || !validateEmail(raroEmail)) {
+        if (email === "" || !validateEmail(email)) {
             isInvalid = true
-            setRaroEmailError(true)
+            setEmailError(true)
         }
         if (birthDate === "") {
             isInvalid = true
@@ -233,8 +233,8 @@ export default function ModalAddContributor({ refreshEmployeeList, closeFunc, se
                         setCpf={setCpf}
                         rg={rg}
                         setRg={setRg}
-                        raroEmail={raroEmail}
-                        setRaroEmail={setRaroEmail}
+                        email={email}
+                        setEmail={setEmail}
                         birthDate={birthDate}
                         setBirthDate={setBirthDate}
                         contributornameError={contributornameError}
@@ -242,7 +242,7 @@ export default function ModalAddContributor({ refreshEmployeeList, closeFunc, se
                         cellphoneError={cellphoneError}
                         cpfError={cpfError}
                         rgError={rgError}
-                        raroEmailError={raroEmailError}
+                        emailError={emailError}
                         birthDateError={birthDateError} />
                 </TabPanel>
                 <TabPanel value="2">

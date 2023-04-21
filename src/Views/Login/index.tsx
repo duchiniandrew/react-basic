@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom"
 
 import { authenticate } from "../../Apis/Login"
 import styles from "./Login.module.css"
-import LogoRaro from "../../img/marcaRaro.png"
+import Logo from "../../img/marca.png"
 
 export default function Login(): JSX.Element {
 
@@ -41,9 +41,9 @@ export default function Login(): JSX.Element {
     return (
         <div className={styles.container}>
             <div className={styles.imgContainer}>
-                <img className={styles.imageRaro} src={LogoRaro} alt="Raro Basic" />
+                <img className={styles.companyImage} src={Logo} alt="React Basic" />
                 <div className={styles.centered}>
-                    <h1>Raro Basic</h1>
+                    <h1>React Basic</h1>
                 </div>
             </div>
             <div className={styles.loginForm}>

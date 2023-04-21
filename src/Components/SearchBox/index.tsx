@@ -74,7 +74,7 @@ export default function SearchBox({ list, filter, setList }: { list: any[], filt
     }
     return (
         <div className={styles.searchContainer}>
-            <TextField label="Buscar" variant="outlined" onChange={e => setList(search(list, e.target.value.toLowerCase()))} />
+            <TextField label="Search" variant="outlined" onChange={e => setList(search(list, e.target.value.toLowerCase()))} />
         </div>
     )
 }

@@ -22,7 +22,7 @@ export default function SelectedContributor({ selectedContributor, setSelectedCo
                             <ListItemText primary={selectedContributor.name} secondary={
                                 <div>
                                     <div>
-                                        <span>{selectedContributor.professionalEmailRaro}</span>
+                                        <span>{selectedContributor.professionalEmail}</span>
                                     </div>
                                     <div >
                                         <span>Tel: {selectedContributor.cellPhone}</span>

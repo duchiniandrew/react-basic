@@ -13,7 +13,7 @@ export default function Reports(): JSX.Element {
         previusSalary: 3000,
         dateChange: "2020-8-25",
         modality: "CLT",
-        raroTime: "25/08/1992",
+        companyTime: "25/08/1992",
         alocation: "BBCE",
         profile: "pleno",
         function: "Backend"
@@ -24,7 +24,7 @@ export default function Reports(): JSX.Element {
         previusSalary: 4000,
         dateChange: "2019-10-10",
         modality: "PJ",
-        raroTime: "25/08/1992",
+        companyTime: "25/08/1992",
         alocation: "Pessego",
         profile: "Senior",
         function: "Frontend"
@@ -35,7 +35,7 @@ export default function Reports(): JSX.Element {
         previusSalary: 5000,
         dateChange: "2020-8-25",
         modality: "CLT",
-        raroTime: "25/08/1992",
+        companyTime: "25/08/1992",
         alocation: "BBCE",
         profile: "Senior",
         function: "QA"
@@ -46,22 +46,22 @@ export default function Reports(): JSX.Element {
                 {/* <Button className={styles.buttons} color="primary" variant="contained">Filtro</Button> */}
                 <Filter></Filter>
                 <Button className={styles.buttons} color="primary" variant="contained">PDF</Button>
-                <ExportXLSX btnStyle={"margin: 100"} exportData={[{ nome: "andrew", sobreNome: "Duchini" }]}></ExportXLSX>
+                <ExportXLSX btnStyle={"margin: 100"} exportData={rows}></ExportXLSX>
             </div>
 
             <TableContainer component={Paper}>
                 <Table size="medium" aria-label="a dense table">
                     <TableHead>
                         <TableRow>
-                            <TableCell align="center">Nome</TableCell>
-                            <TableCell align="center">Salário</TableCell>
-                            <TableCell align="center">Salário Anterior</TableCell>
-                            <TableCell align="center">Data Alteração</TableCell>
-                            <TableCell align="center">Modalidade</TableCell>
-                            <TableCell align="center">Tempo de raro</TableCell>
-                            <TableCell align="center">Alocação</TableCell>
-                            <TableCell align="center">Perfil</TableCell>
-                            <TableCell align="center">Função</TableCell>
+                            <TableCell align="center">Name</TableCell>
+                            <TableCell align="center">Salary</TableCell>
+                            <TableCell align="center">previous Salary</TableCell>
+                            <TableCell align="center">Changed Date</TableCell>
+                            <TableCell align="center">ModalModalityidade</TableCell>
+                            <TableCell align="center">Company Time</TableCell>
+                            <TableCell align="center">Allocations</TableCell>
+                            <TableCell align="center">Profile</TableCell>
+                            <TableCell align="center">Work</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -72,7 +72,7 @@ export default function Reports(): JSX.Element {
                                 <TableCell align="center">{row.previusSalary}</TableCell>
                                 <TableCell align="center">{row.dateChange}</TableCell>
                                 <TableCell align="center">{row.modality}</TableCell>
-                                <TableCell align="center">{row.raroTime}</TableCell>
+                                <TableCell align="center">{row.companyTime}</TableCell>
                                 <TableCell align="center">{row.alocation}</TableCell>
                                 <TableCell align="center">{row.profile}</TableCell>
                                 <TableCell align="center">{row.function}</TableCell>

@@ -34,7 +34,7 @@ export default function ContributorSkillsModal({ contributor }: { contributor: E
                 <ListItemText primary={contributor.name} secondary={
                     <div>
                         <div>
-                            <span>{contributor.professionalEmailRaro}</span>
+                            <span>{contributor.professionalEmail}</span>
                         </div>
                         <div>
                             <span>Tel: {contributor.cellPhone}</span>
